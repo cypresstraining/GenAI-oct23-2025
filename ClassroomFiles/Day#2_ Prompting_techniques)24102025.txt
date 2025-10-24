@@ -1,0 +1,89 @@
+Recap!
+
+We understand  - Ai landscape 
+Prompting  =>
+Art of testing  => manual testing 
+
+here how you need to replicate the customer prompt with different techniques is the only way to test these AI application. 
+
+To do so we need to understand different prompting techniques.
+
+we will consider AI Tutor application as a reference project to learn prompting. 
+AI Tutor  => an AI integrated chatbot which is similar to chatgpt and it is specially provide the answers to the students questions in specific subjects ( 8/9/10) => 
+this AI Tutor is a tool used by school students to get immediate help to solve their questions. 
+
+if it is the use case to you to test AI tutor application how many prompts you need to test before going to release?
+
+1. Positive testing is required  => we will try to ask the question which can answered by AI brain. => in scope question
+
+It is already trained to give answer.
+
+2. Negative testing is required=> We will try to ask the question which can not answered by AI brain( if you are asking +2 subjects related questions or Btech or other subjects) out of scope question
+ => not trained yet , so obviously it is not capable to answer.
+
+3. Happy path testing is required =>  which questions or format of the questions students frequently ask. 
+=> regular asks must provide accurate answer. 
+
+4. Non happy path testing is required=> 
+Tricky questions 
+Funny questions 
+=> biased questions 
+=> unsafe questions 
+
+=> to create a prompt or ask => we need to supply 
+a. context  => 
+b. example  => 
+to get better accuracy  you need to supply as much as possible information to the AI. 
+
+Prompting techniques:
+
+1. single shot prompt : I do not provide any help to the AI with reference to context / example . 
+Still expecting the answer or response from the AI brain ( LLM)
+
+2. Few shot prompt: 
+we need to give some examples 2/3 => to teach AI what is your expectations. 
+=> AI learn from your prompt examples and deliver similar formatted response.
+
+example 1 : 
+example 2: 
+Same pattern examples if you are providing happy path testing
+
+suppose => if you provide example 1 to display the results in a table format 
+if you are provide example 2 to display the results in bullet points format .
+
+Now Question to AI brain  => tricky => Non happy path 
+
+Differences between single shot prompt and few shot prompt ?
+in single shot prompt we do ask direct question and check how AI is acting on the question without context and without examples?
+
+in few shot prompt we do provide couple of example and then ask your question => so that AI will take your examples into consideration ( learn from examples ) and respond back to your question by keeping this learning in the mind and respond in the similar way.
+
+3. context prompting or conversational prompting: 
+
+AI brain do have temporary memory , in this memory we need to store the information about student . 
+1.what kind of answer format he is expecting from the previous asks 
+2.who is the customer 
+3.style of the customer 
+4. persona of the customer all these things in the temp memory of the AI brain . 
+if you do not want the context  => you can open the new chat 
+
+4. Role based prompting =>
+5. Style based prompting => 
+6. Jailbreaking prompt 
+7. Prompt leaking
+8. prompt injection 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
